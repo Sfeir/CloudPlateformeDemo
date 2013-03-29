@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>CloudPlateformDemo</servlet-name>
+		<servlet-class>cloudplateform.demo.CloudPlateformDemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CloudPlateformDemo</servlet-name>
+		<url-pattern>/cloudplateformdemo</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>SearchLoad</servlet-name>
+	<servlet-class>cloudplateform.search.CloudPlateformSearchLoadDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchLoad</servlet-name>
+		<url-pattern>/searchLoad</url-pattern>
+	</servlet-mapping>
+
+		<servlet>
+		<servlet-name>SearchDelete</servlet-name>
+	<servlet-class>cloudplateform.search.CloudPlateformSearchDeleteDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchDelete</servlet-name>
+		<url-pattern>/searchDelete</url-pattern>
+	</servlet-mapping>
+		
+		<servlet>
+		<servlet-name>Mail</servlet-name>
+	<servlet-class>cloudplateform.mail.CloudPlateformMailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Mail</servlet-name>
+		<url-pattern>/mail</url-pattern>
+	</servlet-mapping>
+		
+
+	<servlet>
+		<servlet-name>SearchQuery</servlet-name>
+	<servlet-class>cloudplateform.search.CloudPlateformSearchQueryDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchQuery</servlet-name>
+		<url-pattern>/searchQuery</url-pattern>
+	</servlet-mapping>
+	
+		
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+ <servlet>
+  <servlet-name>SystemServiceServlet</servlet-name>
+  <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+  <init-param>
+   <param-name>services</param-name>
+   <param-value>cloudplateform.endpoints.TitleEndpoint</param-value>
+  </init-param>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>SystemServiceServlet</servlet-name>
+  <url-pattern>/_ah/spi/*</url-pattern>
+ </servlet-mapping>
+</web-app>
