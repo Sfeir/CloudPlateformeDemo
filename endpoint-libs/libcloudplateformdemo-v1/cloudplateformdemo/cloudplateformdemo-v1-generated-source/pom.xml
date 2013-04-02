@@ -8,8 +8,8 @@
 
   <groupId>com.google.apis</groupId>
   <artifactId>google-api-services-cloudplateformdemo</artifactId>
-  <version>v1-rev20130322183246-1.13.2-beta</version>
-  <name> v1 (revision 20130322183246)</name>
+  <version>v1-rev20130402173047-1.14.1-beta</version>
+  <name> v1 (revision 20130402173047)</name>
   <packaging>jar</packaging>
 
   <inceptionYear>2011</inceptionYear>
@@ -58,11 +58,11 @@
           <links>
             <link>http://docs.oracle.com/javase/7/docs/api</link>
           
-            <link>http://javadoc.google-http-java-client.googlecode.com/hg/1.13.1-beta</link>
+            <link>http://javadoc.google-http-java-client.googlecode.com/hg/1.14.1-beta</link>
           
-            <link>http://javadoc.google-oauth-java-client.googlecode.com/hg/1.13.1-beta</link>
+            <link>http://javadoc.google-oauth-java-client.googlecode.com/hg/1.14.1-beta</link>
           
-            <link>http://javadoc.google-api-java-client.googlecode.com/hg/1.13.2-beta</link>
+            <link>http://javadoc.google-api-java-client.googlecode.com/hg/1.14.1-beta</link>
           </links>
         </configuration>
       </plugin>
@@ -74,7 +74,7 @@
     <dependency>
       <groupId>com.google.api-client</groupId>
       <artifactId>google-api-client</artifactId>
-      <version>1.13.2-beta</version>
+      <version>1.14.1-beta</version>
     </dependency>
   </dependencies>
 

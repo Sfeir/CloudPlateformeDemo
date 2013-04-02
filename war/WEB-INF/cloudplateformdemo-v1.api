@@ -24,13 +24,69 @@
     "maxAge" : 0
   },
   "methods" : {
-    "cloudplateformdemo.title" : {
-      "path" : "title/{id}",
+    "cloudplateformdemo.titlesAllTitles" : {
+      "path" : "titles",
       "httpMethod" : "GET",
       "scopes" : [ ],
       "audiences" : [ ],
       "clientIds" : [ ],
-      "rosyMethod" : "TitleEndpoint.title",
+      "rosyMethod" : "TitleEndpoint.getAllTitles",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "cloudplateformdemo.titlesUpdateTitleById" : {
+      "path" : "titles/{id}",
+      "httpMethod" : "PUT",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "TitleEndpoint.titlesUpdateTitleById",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "cloudplateformdemo.titlesCreateTitle" : {
+      "path" : "titles",
+      "httpMethod" : "POST",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "TitleEndpoint.titlesCreateTitle",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "cloudplateformdemo.titlesGetTitleById" : {
+      "path" : "titles/{id}",
+      "httpMethod" : "GET",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "TitleEndpoint.titlesGetTitleById",
       "request" : {
         "parameters" : {
           "id" : {
@@ -52,10 +108,43 @@
         "type" : "object",
         "properties" : {
         }
+      },
+      "TitleCollection" : {
+        "id" : "TitleCollection",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Title"
+            }
+          }
+        }
       }
     },
     "methods" : {
-      "TitleEndpoint.title" : {
+      "TitleEndpoint.getAllTitles" : {
+        "response" : {
+          "$ref" : "TitleCollection"
+        }
+      },
+      "TitleEndpoint.titlesUpdateTitleById" : {
+        "request" : {
+          "$ref" : "Title"
+        },
+        "response" : {
+          "$ref" : "Title"
+        }
+      },
+      "TitleEndpoint.titlesCreateTitle" : {
+        "request" : {
+          "$ref" : "Title"
+        },
+        "response" : {
+          "$ref" : "Title"
+        }
+      },
+      "TitleEndpoint.titlesGetTitleById" : {
         "response" : {
           "$ref" : "Title"
         }

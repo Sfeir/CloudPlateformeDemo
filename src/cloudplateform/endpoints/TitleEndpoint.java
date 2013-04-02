@@ -1,5 +1,7 @@
 package cloudplateform.endpoints;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 
 import javax.inject.Named;
@@ -17,10 +19,29 @@ public class TitleEndpoint {
 			.getName());
 
 
+	@ApiMethod(name = "titlesAllTitles", httpMethod = "GET", path = "titles")
+	public List<Title> getAllTitles() {	
+		List<Title> result = new ArrayList<Title>();
+		return result;
+	}
 	
-	@ApiMethod(name = "title", httpMethod = "GET", path = "title/{id}")
-	public Title title(@Named("id") String id) {
+	@ApiMethod(name = "titlesCreateTitle", httpMethod = "POST", path = "titles")
+	public Title titlesCreateTitle(@Named("id") String id, Title title) {
+		// Create Title
+		return title;
+	}
+
+	
+	@ApiMethod(name = "titlesGetTitleById", httpMethod = "GET", path = "titles/{id}")
+	public Title titlesGetTitleById(@Named("id") String id) {
 		Title title = new Title("Hexagone :" + id);
+		return title;
+	}
+	
+	@ApiMethod(name = "titlesUpdateTitleById", httpMethod = "PUT", path = "titles/{id}")
+	public Title titlesUpdateTitleById(@Named("id") String id, Title title) {
+		// update Title
+		// Error if no Title for this id
 		return title;
 	}	
 }

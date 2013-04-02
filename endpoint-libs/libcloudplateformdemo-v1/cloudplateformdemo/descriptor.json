@@ -1,11 +1,11 @@
 {
   "files": [
     {
-      "path": "quizzmyzik-cloudplateformdemo-v1-20130322183246-java-1.13.2-beta-sources.jar", 
+      "path": "quizzmyzik-cloudplateformdemo-v1-20130402173047-java-1.14.1-beta-sources.jar", 
       "type": "source"
     }, 
     {
-      "path": "quizzmyzik-cloudplateformdemo-v1-20130322183246-java-1.13.2-beta.jar.properties", 
+      "path": "quizzmyzik-cloudplateformdemo-v1-20130402173047-java-1.14.1-beta.jar.properties", 
       "type": "android.properties"
     }
   ], 
@@ -17,11 +17,11 @@
     {
       "files": [
         {
-          "downloadUrl": "http://google-api-java-client.googlecode.com/files/google-api-java-client-1.13.2-beta.zip", 
+          "downloadUrl": "http://google-api-java-client.googlecode.com/files/google-api-java-client-1.14.1-beta.zip", 
           "type": "bundle"
         }
       ], 
-      "version": "1.13.2-beta", 
+      "version": "1.14.1-beta", 
       "name": "Google API Java Client Bundle", 
       "environments": [
         "manual"
@@ -30,11 +30,11 @@
     {
       "files": [
         {
-          "path": "libs/google-api-client-1.13.2-beta.jar", 
+          "path": "libs/google-api-client-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-api-client-1.13.2-beta-sources.jar", 
+          "path": "libs-sources/google-api-client-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -42,11 +42,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/google-api-client-1.13.2-beta.jar.properties", 
+          "path": "libs/google-api-client-1.14.1-beta.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "1.13.2-beta", 
+      "version": "1.14.1-beta", 
       "name": "Google APIs Client Library", 
       "environments": [
         "*"
@@ -55,11 +55,11 @@
     {
       "files": [
         {
-          "path": "libs/google-api-client-android-1.13.2-beta.jar", 
+          "path": "libs/google-api-client-android-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-api-client-android-1.13.2-beta-sources.jar", 
+          "path": "libs-sources/google-api-client-android-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -67,11 +67,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/google-api-client-android-1.13.2-beta.jar.properties", 
+          "path": "libs/google-api-client-android-1.14.1-beta.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "1.13.2-beta", 
+      "version": "1.14.1-beta", 
       "name": "Android platform extensions to the Google APIs Client Library", 
       "environments": [
         "android"
@@ -80,11 +80,11 @@
     {
       "files": [
         {
-          "path": "libs/google-api-client-appengine-1.13.2-beta.jar", 
+          "path": "libs/google-api-client-appengine-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-api-client-appengine-1.13.2-beta-sources.jar", 
+          "path": "libs-sources/google-api-client-appengine-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -92,7 +92,7 @@
           "type": "license"
         }
       ], 
-      "version": "1.13.2-beta", 
+      "version": "1.14.1-beta", 
       "name": "Google App Engine extensions to the Google APIs Client Library", 
       "environments": [
         "appengine"
@@ -101,11 +101,11 @@
     {
       "files": [
         {
-          "path": "libs/google-api-client-java6-1.13.2-beta.jar", 
+          "path": "libs/google-api-client-java6-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-api-client-java6-1.13.2-beta-sources.jar", 
+          "path": "libs-sources/google-api-client-java6-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -113,7 +113,7 @@
           "type": "license"
         }
       ], 
-      "version": "1.13.2-beta", 
+      "version": "1.14.1-beta", 
       "name": "Java 6 (and higher) extensions to the Google APIs Client Library", 
       "environments": [
         "generic"
@@ -122,11 +122,33 @@
     {
       "files": [
         {
-          "path": "libs/google-oauth-client-1.13.1-beta.jar", 
+          "path": "libs/google-api-client-servlet-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-oauth-client-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-api-client-servlet-1.14.1-beta-sources.jar", 
+          "type": "source"
+        }, 
+        {
+          "path": "dependencies/APACHE-LICENSE.txt", 
+          "type": "license"
+        }
+      ], 
+      "version": "1.14.1-beta", 
+      "name": "Servlet extensions to the Google APIs Client Library", 
+      "environments": [
+        "appengine", 
+        "servlet"
+      ]
+    }, 
+    {
+      "files": [
+        {
+          "path": "libs/google-oauth-client-1.14.1-beta.jar", 
+          "type": "binary"
+        }, 
+        {
+          "path": "libs-sources/google-oauth-client-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -134,11 +156,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/google-oauth-client-1.13.1-beta.jar.properties", 
+          "path": "libs/google-oauth-client-1.14.1-beta.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Google OAuth Client Library", 
       "environments": [
         "*"
@@ -147,11 +169,11 @@
     {
       "files": [
         {
-          "path": "libs/google-oauth-client-appengine-1.13.1-beta.jar", 
+          "path": "libs/google-oauth-client-appengine-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-oauth-client-appengine-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-oauth-client-appengine-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -159,7 +181,7 @@
           "type": "license"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Google App Engine extensions to the Google OAuth Client Library", 
       "environments": [
         "appengine"
@@ -168,11 +190,11 @@
     {
       "files": [
         {
-          "path": "libs/google-oauth-client-java6-1.13.1-beta.jar", 
+          "path": "libs/google-oauth-client-java6-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-oauth-client-java6-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-oauth-client-java6-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -180,7 +202,7 @@
           "type": "license"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Java 6 (and higher) extensions to the Google OAuth Client Library", 
       "environments": [
         "generic"
@@ -189,11 +211,11 @@
     {
       "files": [
         {
-          "path": "libs/google-oauth-client-java7-1.13.1-beta.jar", 
+          "path": "libs/google-oauth-client-java7-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-oauth-client-java7-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-oauth-client-java7-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -201,7 +223,7 @@
           "type": "license"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Java 7 (and higher) extensions to the Google OAuth Client Library", 
       "environments": [
         "generic"
@@ -210,11 +232,11 @@
     {
       "files": [
         {
-          "path": "libs/google-oauth-client-jetty-1.13.1-beta.jar", 
+          "path": "libs/google-oauth-client-jetty-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-oauth-client-jetty-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-oauth-client-jetty-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -222,7 +244,7 @@
           "type": "license"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Jetty extensions to the Google OAuth Client Library", 
       "environments": [
         "generic"
@@ -231,11 +253,11 @@
     {
       "files": [
         {
-          "path": "libs/google-oauth-client-servlet-1.13.1-beta.jar", 
+          "path": "libs/google-oauth-client-servlet-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-oauth-client-servlet-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-oauth-client-servlet-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -243,7 +265,7 @@
           "type": "license"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Servlet and JDO extensions to the Google OAuth Client Library", 
       "environments": [
         "appengine", 
@@ -253,11 +275,11 @@
     {
       "files": [
         {
-          "path": "libs/google-http-client-1.13.1-beta.jar", 
+          "path": "libs/google-http-client-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-http-client-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-http-client-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -265,11 +287,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/google-http-client-1.13.1-beta.jar.properties", 
+          "path": "libs/google-http-client-1.14.1-beta.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Google HTTP Client Library", 
       "environments": [
         "*"
@@ -278,11 +300,11 @@
     {
       "files": [
         {
-          "path": "libs/google-http-client-android-1.13.1-beta.jar", 
+          "path": "libs/google-http-client-android-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-http-client-android-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-http-client-android-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -290,11 +312,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/google-http-client-android-1.13.1-beta.jar.properties", 
+          "path": "libs/google-http-client-android-1.14.1-beta.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Android platform extensions to the Google HTTP Client Library", 
       "environments": [
         "android"
@@ -303,11 +325,11 @@
     {
       "files": [
         {
-          "path": "libs/google-http-client-appengine-1.13.1-beta.jar", 
+          "path": "libs/google-http-client-appengine-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-http-client-appengine-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-http-client-appengine-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -315,7 +337,7 @@
           "type": "license"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Google App Engine extensions to the Google HTTP Client Library", 
       "environments": [
         "appengine"
@@ -324,11 +346,11 @@
     {
       "files": [
         {
-          "path": "libs/google-http-client-gson-1.13.1-beta.jar", 
+          "path": "libs/google-http-client-gson-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-http-client-gson-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-http-client-gson-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -336,11 +358,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/google-http-client-gson-1.13.1-beta.jar.properties", 
+          "path": "libs/google-http-client-gson-1.14.1-beta.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "GSON extensions to the Google HTTP Client Library", 
       "environments": [
         "*"
@@ -349,11 +371,11 @@
     {
       "files": [
         {
-          "path": "libs/google-http-client-jackson-1.13.1-beta.jar", 
+          "path": "libs/google-http-client-jackson-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-http-client-jackson-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-http-client-jackson-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -361,11 +383,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/google-http-client-jackson-1.13.1-beta.jar.properties", 
+          "path": "libs/google-http-client-jackson-1.14.1-beta.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Jackson extensions to the Google HTTP Client Library", 
       "environments": [
         "*"
@@ -374,11 +396,11 @@
     {
       "files": [
         {
-          "path": "libs/google-http-client-jackson2-1.13.1-beta.jar", 
+          "path": "libs/google-http-client-jackson2-1.14.1-beta.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/google-http-client-jackson2-1.13.1-beta-sources.jar", 
+          "path": "libs-sources/google-http-client-jackson2-1.14.1-beta-sources.jar", 
           "type": "source"
         }, 
         {
@@ -386,11 +408,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/google-http-client-jackson2-1.13.1-beta.jar.properties", 
+          "path": "libs/google-http-client-jackson2-1.14.1-beta.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "1.13.1-beta", 
+      "version": "1.14.1-beta", 
       "name": "Jackson 2 extensions to the Google HTTP Client Library", 
       "environments": [
         "*"
@@ -416,31 +438,6 @@
       "environments": [
         "servlet", 
         "generic"
-      ]
-    }, 
-    {
-      "files": [
-        {
-          "path": "libs/guava-jdk5-13.0.jar", 
-          "type": "binary"
-        }, 
-        {
-          "path": "libs-sources/guava-jdk5-13.0-sources.jar", 
-          "type": "source"
-        }, 
-        {
-          "path": "dependencies/APACHE-LICENSE.txt", 
-          "type": "license"
-        }, 
-        {
-          "path": "libs/guava-jdk5-13.0.jar.properties", 
-          "type": "android-properties"
-        }
-      ], 
-      "version": "jdk5-13.0", 
-      "name": "Google Guava", 
-      "environments": [
-        "*"
       ]
     }, 
     {
@@ -515,11 +512,11 @@
     {
       "files": [
         {
-          "path": "libs/jackson-core-asl-1.9.9.jar", 
+          "path": "libs/jackson-core-asl-1.9.11.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/jackson-core-asl-1.9.9-sources.jar", 
+          "path": "libs-sources/jackson-core-asl-1.9.11-sources.jar", 
           "type": "source"
         }, 
         {
@@ -527,11 +524,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/jackson-core-asl-1.9.9.jar.properties", 
+          "path": "libs/jackson-core-asl-1.9.11.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "1.9.9", 
+      "version": "1.9.11", 
       "name": "Jackson Core ASL", 
       "environments": [
         "*"
@@ -540,11 +537,11 @@
     {
       "files": [
         {
-          "path": "libs/jackson-core-2.0.5.jar", 
+          "path": "libs/jackson-core-2.1.3.jar", 
           "type": "binary"
         }, 
         {
-          "path": "libs-sources/jackson-core-2.0.5-sources.jar", 
+          "path": "libs-sources/jackson-core-2.1.3-sources.jar", 
           "type": "source"
         }, 
         {
@@ -552,11 +549,11 @@
           "type": "license"
         }, 
         {
-          "path": "libs/jackson-core-2.0.5.jar.properties", 
+          "path": "libs/jackson-core-2.1.3.jar.properties", 
           "type": "android-properties"
         }
       ], 
-      "version": "2.0.5", 
+      "version": "2.1.3", 
       "name": "Jackson2 Core", 
       "environments": [
         "*"
@@ -689,8 +686,8 @@
       ]
     }
   ], 
-  "language_version": "1.13.2-beta", 
-  "revision": 20130322183246, 
+  "language_version": "1.14.1-beta", 
+  "revision": 20130402173047, 
   "id": "cloudplateformdemo:v1", 
   "name": "cloudplateformdemo"
 }

@@ -1,0 +1,175 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://quizzmyzik.appspot.com/_ah/api",
+  "name" : "cloudplateformdemosecure",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "http://quizzmyzik.appspot.com/_ah/spi",
+    "deadline" : 10.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "cloudplateformdemosecure.titlesAllTitles" : {
+      "path" : "secure/titles",
+      "httpMethod" : "GET",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "TitleEndpointSecure.getAllTitles",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "cloudplateformdemosecure.titlesUpdateTitleById" : {
+      "path" : "secure/titles/{id}",
+      "httpMethod" : "PUT",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "TitleEndpointSecure.titlesUpdateTitleById",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "cloudplateformdemosecure.titlesCreateTitle" : {
+      "path" : "secure/titles",
+      "httpMethod" : "POST",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "TitleEndpointSecure.titlesCreateTitle",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "cloudplateformdemosecure.titlesGetTitleById" : {
+      "path" : "secure/titles/{id}",
+      "httpMethod" : "GET",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "TitleEndpointSecure.titlesGetTitleById",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "User" : {
+        "id" : "User",
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          },
+          "authDomain" : {
+            "type" : "string"
+          },
+          "userId" : {
+            "type" : "string"
+          },
+          "federatedIdentity" : {
+            "type" : "string"
+          },
+          "nickname" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Title" : {
+        "id" : "Title",
+        "type" : "object",
+        "properties" : {
+        }
+      },
+      "TitleCollection" : {
+        "id" : "TitleCollection",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Title"
+            }
+          }
+        }
+      }
+    },
+    "methods" : {
+      "TitleEndpointSecure.getAllTitles" : {
+        "response" : {
+          "$ref" : "TitleCollection"
+        }
+      },
+      "TitleEndpointSecure.titlesUpdateTitleById" : {
+        "request" : {
+          "$ref" : "Title"
+        },
+        "response" : {
+          "$ref" : "Title"
+        }
+      },
+      "TitleEndpointSecure.titlesCreateTitle" : {
+        "request" : {
+          "$ref" : "Title"
+        },
+        "response" : {
+          "$ref" : "Title"
+        }
+      },
+      "TitleEndpointSecure.titlesGetTitleById" : {
+        "response" : {
+          "$ref" : "Title"
+        }
+      }
+    }
+  }
+}

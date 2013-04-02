@@ -1,6 +1,6 @@
 {
  "kind": "discovery#restDescription",
- "etag": "\"2MERlHgXUfSlVQnFAL3vX-58eZg/n-Tl_vFdoJcm_8NOVt4SufiFSsk\"",
+ "etag": "\"2MERlHgXUfSlVQnFAL3vX-58eZg/8teKQey_swJgZWKflhKdUuloYJg\"",
  "discoveryVersion": "v1",
  "id": "cloudplateformdemo:v1",
  "name": "cloudplateformdemo",
@@ -11,10 +11,10 @@
   "x32": "http://www.google.com/images/icons/product/search-32.gif"
  },
  "protocol": "rest",
- "baseUrl": "https://quizzmyzik.appspot.com/_ah/api/cloudplateformdemo/v1/title/",
- "basePath": "/_ah/api/cloudplateformdemo/v1/title/",
+ "baseUrl": "https://quizzmyzik.appspot.com/_ah/api/cloudplateformdemo/v1/",
+ "basePath": "/_ah/api/cloudplateformdemo/v1/",
  "rootUrl": "https://quizzmyzik.appspot.com/_ah/api/",
- "servicePath": "cloudplateformdemo/v1/title/",
+ "servicePath": "cloudplateformdemo/v1/",
  "batchPath": "batch",
  "parameters": {
   "alt": {
@@ -65,12 +65,53 @@
   "Title": {
    "id": "Title",
    "type": "object"
+  },
+  "TitleCollection": {
+   "id": "TitleCollection",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Title"
+     }
+    }
+   }
   }
  },
  "methods": {
-  "title": {
-   "id": "cloudplateformdemo.title",
-   "path": "{id}",
+  "titlesAllTitles": {
+   "id": "cloudplateformdemo.titlesAllTitles",
+   "path": "titles",
+   "httpMethod": "GET",
+   "response": {
+    "$ref": "TitleCollection"
+   }
+  },
+  "titlesCreateTitle": {
+   "id": "cloudplateformdemo.titlesCreateTitle",
+   "path": "titles",
+   "httpMethod": "POST",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "request": {
+    "$ref": "Title"
+   },
+   "response": {
+    "$ref": "Title"
+   }
+  },
+  "titlesGetTitleById": {
+   "id": "cloudplateformdemo.titlesGetTitleById",
+   "path": "titles/{id}",
    "httpMethod": "GET",
    "parameters": {
     "id": {
@@ -82,6 +123,27 @@
    "parameterOrder": [
     "id"
    ],
+   "response": {
+    "$ref": "Title"
+   }
+  },
+  "titlesUpdateTitleById": {
+   "id": "cloudplateformdemo.titlesUpdateTitleById",
+   "path": "titles/{id}",
+   "httpMethod": "PUT",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "request": {
+    "$ref": "Title"
+   },
    "response": {
     "$ref": "Title"
    }

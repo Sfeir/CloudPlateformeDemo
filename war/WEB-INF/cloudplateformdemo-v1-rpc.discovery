@@ -1,6 +1,6 @@
 {
  "kind": "discovery#rpcDescription",
- "etag": "\"2MERlHgXUfSlVQnFAL3vX-58eZg/n-Tl_vFdoJcm_8NOVt4SufiFSsk\"",
+ "etag": "\"2MERlHgXUfSlVQnFAL3vX-58eZg/8teKQey_swJgZWKflhKdUuloYJg\"",
  "discoveryVersion": "v1",
  "id": "cloudplateformdemo:v1",
  "name": "cloudplateformdemo",
@@ -63,11 +63,49 @@
   "Title": {
    "id": "Title",
    "type": "object"
+  },
+  "TitleCollection": {
+   "id": "TitleCollection",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Title"
+     }
+    }
+   }
   }
  },
  "methods": {
-  "cloudplateformdemo.title": {
-   "id": "cloudplateformdemo.title",
+  "cloudplateformdemo.titlesAllTitles": {
+   "id": "cloudplateformdemo.titlesAllTitles",
+   "allowGet": true,
+   "returns": {
+    "$ref": "TitleCollection"
+   }
+  },
+  "cloudplateformdemo.titlesCreateTitle": {
+   "id": "cloudplateformdemo.titlesCreateTitle",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true
+    },
+    "resource": {
+     "$ref": "Title"
+    }
+   },
+   "parameterOrder": [
+    "resource",
+    "id"
+   ],
+   "returns": {
+    "$ref": "Title"
+   }
+  },
+  "cloudplateformdemo.titlesGetTitleById": {
+   "id": "cloudplateformdemo.titlesGetTitleById",
    "allowGet": true,
    "parameters": {
     "id": {
@@ -76,6 +114,25 @@
     }
    },
    "parameterOrder": [
+    "id"
+   ],
+   "returns": {
+    "$ref": "Title"
+   }
+  },
+  "cloudplateformdemo.titlesUpdateTitleById": {
+   "id": "cloudplateformdemo.titlesUpdateTitleById",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true
+    },
+    "resource": {
+     "$ref": "Title"
+    }
+   },
+   "parameterOrder": [
+    "resource",
     "id"
    ],
    "returns": {
